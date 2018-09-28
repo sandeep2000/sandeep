@@ -1,23 +1,28 @@
-#printing caluclations
+#print calculations
+i=int(input("enter value of a:"))
+j=int(input("enter value of b:"))
+o=input("what do you want to do?+,-,*,/:")
 
-i=int(input("enter value of i:"))
-j=int(input("enter value of j:"))
-o=input("what you want to do +,-,*,/")
-
-def add(a,b):
-	return a+b
-
+def add():
+	return i+j
 def sub(a,b):
 	return a-b
-
 def mul(a,b):
 	return a*b
-
-def div(a,b):
+def divide(a,b):
 	return a/b
-	
 
-print("addition=",add(i,j))
-print("substraction=",sub(i,j))
-print("multiplication=",mul(i,j))
-print("division=",div(i,j))
+
+if(o=='+'):
+	res=add()
+
+elif(o=='-'):
+	res=sub(i,j)
+elif(o=='*'):
+	res=mul(i,j)
+elif(o=='/'):
+	res=divide(i,j)
+
+print(res)
+
+ 
