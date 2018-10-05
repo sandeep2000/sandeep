@@ -1,3 +1,4 @@
+#Dictionary
 import random
 a=['r','p','s']
 s1=0
