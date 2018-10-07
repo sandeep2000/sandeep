@@ -28,7 +28,7 @@ while True:
 				playerOverTurn = not playerOverTurn
 			for i in(0,3,6):
 				if(a[i]==a[i+1] and a[i]==a[i+2]):
-					print("game over");
+					print("game over"):
 					exit()
 				for i in range(3):
 					if(a[i]==a[i+3] and a[i]==a[6]):
